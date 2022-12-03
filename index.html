@@ -6,10 +6,28 @@
         <style>
             body { margin: 0; }
             canvas { width: 1000%; height: 1000% }
+
+            .clouds{
+                position: absolute;
+                width: 550px;
+                animation: clouds-animation 20s infinite linear;
+            }            
+
+            @keyframes clouds-animation {
+                from{
+                    right: 30px;
+                }
+                to{
+                    right: 100% ;
+                }
+            }
+
         </style>
     </head>
     <body>
         <script src="three.min.js"></script>
         <script src="pulo.js"></script>
+        <img src="./img/clouds.png" class="clouds">
+       
     </body>
 </html>
